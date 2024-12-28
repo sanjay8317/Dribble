@@ -1,0 +1,350 @@
+{
+    "mainCardsContainer": {
+      "cards": [
+        {
+          "id": 1,
+          "title": "Sales Tracking SRM Dashboard UI/UX Design",
+          "cardImage": "original-084b51bbf4d5784a288919eadd393426.webp",
+          "cardLogo": "fireartlogo.png",
+          "cardTitle": "Visionary Creations",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 275,
+            "views": "1.2k"
+          }
+        },
+        {
+          "id": 2,
+          "title": "InsightHub - KPI & Project Management Dashboard",
+          "cardImage": "original-1a9bb9cc585992a5c5f5afff1c90836a.webp",
+          "cardLogo": "shakurologo.png",
+          "cardTitle": "Shakuro Innovators",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 188,
+            "views": "2.2k"
+          }
+        },
+        {
+          "id": 3,
+          "title": "AI Travel Web Dashboard",
+          "cardImage": "original-50196209e0614b653849b0d54905fa46.webp",
+          "cardLogo": "dipahouselogo.png",
+          "cardTitle": "Dipa Creations",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 256,
+            "views": "1k"
+          }
+        },
+        {
+          "id": 4,
+          "title": "Customer Journey CRM Dashboard",
+          "cardImage": "original-5b10e3625a54f659d4a0e7fe4e6083ec.webp",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Plain Vision",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 750,
+            "views": "5.2k"
+          }
+        },
+        {
+          "id": 5,
+          "title": "Team Management Dashboard",
+          "cardImage": "original-da19059e6b93db48b8e91b499c768751.jpg",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Creative Spark",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 800,
+            "views": "9.2k"
+          }
+        },
+        {
+          "id": 6,
+          "title": "Marketing Analytics Dashboard",
+          "cardImage": "original-084b51bbf4d5784a288919eadd393426.webp",
+          "cardLogo": "fireartlogo.png",
+          "cardTitle": "Innovation Works",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 275,
+            "views": "1.2k"
+          }
+        },
+        {
+          "id": 7,
+          "title": "Sales Performance Dashboard",
+          "cardImage": "original-1a9bb9cc585992a5c5f5afff1c90836a.webp",
+          "cardLogo": "shakurologo.png",
+          "cardTitle": "Shakuro Studios",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 188,
+            "views": "2.2k"
+          }
+        },
+        {
+          "id": 8,
+          "title": "Customer Journey CRM Dashboard",
+          "cardImage": "original-50196209e0614b653849b0d54905fa46.webp",
+          "cardLogo": "dipahouselogo.png",
+          "cardTitle": "Dipa Studio",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 256,
+            "views": "1k"
+          }
+        },
+        {
+          "id": 9,
+          "title": "Finance Analysis Dashboard",
+          "cardImage": "original-5b10e3625a54f659d4a0e7fe4e6083ec.webp",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Plain Concepts",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 750,
+            "views": "5.2k"
+          }
+        },
+        {
+          "id": 10,
+          "title": "Project Tracker Dashboard",
+          "cardImage": "original-da19059e6b93db48b8e91b499c768751.jpg",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Spark Studios",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 800,
+            "views": "9.2k"
+          }
+        },
+        {
+          "id": 11,
+          "title": "Real-time Analytics Dashboard",
+          "cardImage": "original-084b51bbf4d5784a288919eadd393426.webp",
+          "cardLogo": "fireartlogo.png",
+          "cardTitle": "Creative Minds",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 275,
+            "views": "1.2k"
+          }
+        },
+        {
+          "id": 12,
+          "title": "Business Insights Dashboard",
+          "cardImage": "original-1a9bb9cc585992a5c5f5afff1c90836a.webp",
+          "cardLogo": "shakurologo.png",
+          "cardTitle": "Shakuro Visionaries",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 188,
+            "views": "2.2k"
+          }
+        },
+        {
+          "id": 13,
+          "title": "Productivity Dashboard",
+          "cardImage": "original-50196209e0614b653849b0d54905fa46.webp",
+          "cardLogo": "dipahouselogo.png",
+          "cardTitle": "Dipa Innovations",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 256,
+            "views": "1k"
+          }
+        },
+        {
+          "id": 14,
+          "title": "Data Management Dashboard",
+          "cardImage": "original-5b10e3625a54f659d4a0e7fe4e6083ec.webp",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Plain Designers",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 750,
+            "views": "5.2k"
+          }
+        },
+        {
+          "id": 15,
+          "title": "Operations Dashboard",
+          "cardImage": "original-da19059e6b93db48b8e91b499c768751.jpg",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Creative Visionaries",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 800,
+            "views": "9.2k"
+          }
+        },
+        {
+          "id": 16,
+          "title": "Marketing Analytics Dashboard",
+          "cardImage": "original-084b51bbf4d5784a288919eadd393426.webp",
+          "cardLogo": "fireartlogo.png",
+          "cardTitle": "Innovation Lab",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 275,
+            "views": "1.2k"
+          }
+        },
+        {
+          "id": 17,
+          "title": "Sales Performance Tracker",
+          "cardImage": "original-1a9bb9cc585992a5c5f5afff1c90836a.webp",
+          "cardLogo": "shakurologo.png",
+          "cardTitle": "Shakuro Studios",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 188,
+            "views": "2.2k"
+          }
+        },
+        {
+          "id": 18,
+          "title": "Client Management Dashboard",
+          "cardImage": "original-50196209e0614b653849b0d54905fa46.webp",
+          "cardLogo": "dipahouselogo.png",
+          "cardTitle": "Dipa Designers",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 256,
+            "views": "1k"
+          }
+        },
+        {
+          "id": 19,
+          "title": "Project Management Dashboard",
+          "cardImage": "original-5b10e3625a54f659d4a0e7fe4e6083ec.webp",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Plain Creations",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 750,
+            "views": "5.2k"
+          }
+        },
+        {
+          "id": 20,
+          "title": "Employee Performance Dashboard",
+          "cardImage": "original-da19059e6b93db48b8e91b499c768751.jpg",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Creative Makers",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 800,
+            "views": "9.2k"
+          }
+        },
+        {
+          "id": 21,
+          "title": "Task Management Dashboard",
+          "cardImage": "original-084b51bbf4d5784a288919eadd393426.webp",
+          "cardLogo": "fireartlogo.png",
+          "cardTitle": "Innovative Studio",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 275,
+            "views": "1.2k"
+          }
+        },
+        {
+          "id": 22,
+          "title": "Strategic Planning Dashboard",
+          "cardImage": "original-1a9bb9cc585992a5c5f5afff1c90836a.webp",
+          "cardLogo": "shakurologo.png",
+          "cardTitle": "Shakuro Creatives",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 188,
+            "views": "2.2k"
+          }
+        },
+        {
+          "id": 23,
+          "title": "Client Relationship Dashboard",
+          "cardImage": "original-50196209e0614b653849b0d54905fa46.webp",
+          "cardLogo": "dipahouselogo.png",
+          "cardTitle": "Dipa Vision",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 256,
+            "views": "1k"
+          }
+        },
+        {
+          "id": 24,
+          "title": "Strategic Planning Dashboard",
+          "cardImage": "original-5b10e3625a54f659d4a0e7fe4e6083ec.webp",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Plain Studios",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 750,
+            "views": "5.2k"
+          }
+        },
+        {
+          "id": 25,
+          "title": "Strategic Planning Dashboard",
+          "cardImage": "original-da19059e6b93db48b8e91b499c768751.jpg",
+          "cardLogo": "plainthinglogo.png",
+          "cardTitle": "Creative Minds",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 800,
+            "views": "9.2k"
+          }
+        },
+        {
+          "id": 26,
+          "title": "Marketing Insights Dashboard",
+          "cardImage": "original-084b51bbf4d5784a288919eadd393426.webp",
+          "cardLogo": "fireartlogo.png",
+          "cardTitle": "Visionary Hub",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 320,
+            "views": "3k"
+          }
+        },
+        {
+          "id": 27,
+          "title": "Growth Strategy Dashboard",
+          "cardImage": "original-1a9bb9cc585992a5c5f5afff1c90836a.webp",
+          "cardLogo": "shakurologo.png",
+          "cardTitle": "Shakuro Creatives",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 410,
+            "views": "2.8k"
+          }
+        },
+        {
+          "id": 28,
+          "title": "Client Engagement Dashboard",
+          "cardImage": "original-50196209e0614b653849b0d54905fa46.webp",
+          "cardLogo": "dipahouselogo.png",
+          "cardTitle": "Dipa Studios",
+          "teamLabel": "TEAM",
+          "stats": {
+            "likes": 560,
+            "views": "4.2k"
+          }
+        }
+      ],
+      "iconAssets": {
+        "like": "like.png",
+        "view": "eye.png"
+      }
+    }
+  }
+
+
+  
+  

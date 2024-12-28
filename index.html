@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resstyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="maincontainer">
+
+
+
+        <div class="mobilerespnavheader">
+            <div class="respmenuleft">
+
+                <!-- Add this HTML where you want the mobile menu -->
+                <div class="mobile-nav">
+                    <div class="hamburger-menu" onclick="toggleMobileMenu()">
+                        <img src="burger-bar.png" alt="Menu">
+                    </div>
+
+                    <div class="mobile-menu" id="mobileMenu">
+                        <div class="menu-header">
+                            <div class="close-menu" onclick="toggleMobileMenu()">
+                                <img src="close.png" alt="Close">
+                            </div>
+                        </div>
+
+                        <nav class="mobile-nav-content">
+                            <!-- Explore Section -->
+                            <div class="mobile-nav-item">
+                                <div class="nav-item-header" onclick="toggleSubmenu('exploreSubmenu')">
+                                    <span>Explore</span>
+                                    <img src="down-arrow.png" alt="Toggle" class="dropdown-arrow">
+                                </div>
+                                <div class="submenu" id="exploreSubmenu">
+                                    <div class="featured-items">
+                                        <div class="featured-item">
+                                            <img src="rise.png" alt="Popular">
+                                            <span>Popular</span>
+                                        </div>
+                                        <div class="featured-item">
+                                            <img src="sparkler.png" alt="New">
+                                            <span>New and Noteworthy</span>
+                                        </div>
+                                    </div>
+                                    <div class="submenu-links">
+                                        <a href="#">Product Design</a>
+                                        <a href="#">Web Design</a>
+                                        <a href="#">Animation</a>
+                                        <a href="#">Branding</a>
+                                        <a href="#">Illustration</a>
+                                        <a href="#">Mobile</a>
+                                        <a href="#">Typography</a>
+                                        <a href="#">Print</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hire Designer Section -->
+                            <div class="mobile-nav-item">
+                                <div class="nav-item-header" onclick="toggleSubmenu('hireSubmenu')">
+                                    <span>Hire a Designer</span>
+                                    <img src="down-arrow.png" alt="Toggle" class="dropdown-arrow">
+                                </div>
+                                <div class="submenu" id="hireSubmenu">
+                                    <div class="submenu-items">
+                                        <a href="#" class="submenu-item">
+                                            <img src="search-interface-symbol.png" alt="Browse">
+                                            <span>Browse Designers</span>
+                                        </a>
+                                        <a href="#" class="submenu-item">
+                                            <img src="write-file.png" alt="Submit">
+                                            <span>Submit a project brief</span>
+                                        </a>
+                                        <a href="#" class="submenu-item">
+                                            <img src="google-docs.png" alt="Post">
+                                            <span>Post a job</span>
+                                        </a>
+                                        <a href="#" class="submenu-item">
+                                            <img src="info.png" alt="Info">
+                                            <span>Hiring on dribble</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single links -->
+                            <div class="mobile-nav-item">
+                                <a href="#" class="nav-item-link">Find Jobs</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="#" class="nav-item-link">Blog</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="respheaderbrandicon">
+                    <img src="dribblelogo.png" alt="logo">
+                </div>
+
+            </div>
+
+
+
+            <div class="respmenuright">
+                <div class="loginbtn">
+                    <button>Login</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- respsearchbar -->
+        <div class="respsearchbar">
+
+            <div class="insidesearch">
+                <input type="text" placeholder="What are you looking for ?" id="mysearchcard">
+            </div>
+            <div class="shotsearch">
+
+                <div class="shots">
+                    <div class="shotstxt">
+                        <p>Shots</p>
+                    </div>
+                    <div class="shotimg">
+                        <img src="down-arrow.png" alt="">
+                    </div>
+                </div>
+
+                <div class="searchicon">
+                    <img src="searchpink.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 
+        navbar -->
+        <div class="navbar">
+            <div class="headerbrandicon">
+                <div class="brand">
+                    <a href="#"><img src="dribblelogo.png" alt="logo"></a>
+                </div>
+            </div>
+
+            <div class="searchbar">
+
+                <div class="insidesearch">
+                    <input type="text" placeholder="What are you looking for ?" id="searchcard">
+                </div>
+                <div class="shotsearch">
+
+                    <div class="shots">
+                        <div class="shotstxt">
+                            <p>Shots</p>
+                        </div>
+                        <div class="shotimg">
+                            <img src="down-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="searchicon">
+                        <img src="searchpink.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navlist">
+
+                <nav>
+                    <div class="navlist1">
+                        <div class="explore-container">
+                            <div class="explore">
+                                <a href="#">Explore</a>
+                            </div>
+                            <div class="exploreimage">
+                                <img src="down-arrow.png" alt="">
+                            </div>
+                            <div class="dropdown-menu">
+                                <div class="drophead">
+                                    <div class="popular">
+                                        <div class="popimg">
+                                            <img src="rise.png" alt="popular" width="100" height="100">
+                                        </div>
+                                        <div class="populartext">
+                                            <a href="#">Popular</a>
+                                        </div>
+                                    </div>
+                                    <div class="Newnot">
+                                        <div class="Newnotimg">
+                                            <img src="sparkler.png" alt="popular">
+                                        </div>
+                                        <div class="Newnottext">
+                                            <a href="#">New and Noteworthy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-links">
+                                    <a href="#">Product Design</a>
+                                    <a href="#">Web Design</a>
+                                    <a href="#">Animation</a>
+                                    <a href="#">Branding</a>
+                                    <a href="#">Illustration</a>
+                                    <a href="#">Mobile</a>
+                                    <a href="#">Typography</a>
+                                    <a href="#">Print</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav>
+                    <div class="navlist2">
+                        <div class="designer-container">
+                            <div class="designer">
+                                <a href="#">Hire a designer</a>
+                            </div>
+                            <div class="designerimg">
+                                <img src="down-arrow.png" alt="▼">
+                            </div>
+                            <div class="dropdown-menu">
+                                <div class="browse">
+                                    <div class="browsedropimg">
+                                        <img src="search-interface-symbol.png" alt="search">
+                                    </div>
+                                    <div class="browsedrop">
+                                        <a href="#">Browse Designers</a>
+                                    </div>
+                                </div>
+                                <div class="submit">
+                                    <div class="subitdropimg">
+                                        <img src="write-file.png" alt="write">
+                                    </div>
+                                    <div class="subitdrop">
+                                        <a href="#">Submit a project brief</a>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="postdropimg">
+                                        <img src="google-docs.png" alt="docs">
+                                    </div>
+                                    <div class="postdrop">
+                                        <a href="#">Post a job</a>
+                                    </div>
+                                </div>
+                                <div class="hiring">
+                                    <div class="hiringdropimg">
+                                        <img src="info.png" alt="info">
+                                    </div>
+                                    <div class="hiringdrop">
+                                        <a href="#">Hiring on dribble</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="navlist3">
+                    <a href="">Find jobs</a>
+                </div>
+
+                <div class="navlist4">
+                    <a href="">Blog</a>
+                </div>
+            </div>
+
+
+            <div class="navbuttons">
+                <div class="signuplogin">
+                    <div class="signup">
+                        <a href="">Sign up</a>
+                    </div>
+                    <div class="login">
+                        <button>Login</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- about dashboard -->
+
+
+        <div class="aboutdashboard">
+            <div class="titledashboard">
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="descofdashboard">
+                <p>
+                    Dashboards, admin panels & analytics design inspiration. Dashboards help organize, store, and
+                    display important information from multiple data sources into one, easy-to-access place.
+                </p>
+            </div>
+
+            <div class="related">
+                <div class="relate">
+                    Related:
+                </div>
+                <div class="chart">
+                    chart
+                </div>
+
+                <div class="admin">
+                    admin
+                </div>
+
+                <div class="graph">
+                    graph
+                </div>
+
+                <div class="analytics">
+                    analytics
+                </div>
+
+                <div class="data">
+                    data
+                </div>
+
+                <div class="stats">
+                    stats
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- cardbuttons -->
+
+
+
+        <div class="cardbtnsmain">
+
+
+            <div class="dropdown">
+                <button class="popbtn" onclick="toggleDropdown(event)">Popular <img src="down-arrow.png" alt=""
+                        class="popimg"></button>
+                <div id="dropdown" class="dropdown-content">
+                    <a href="#" data-filter="liked">Liked</a>
+                    <a href="#" data-filter="saved">Saved</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="multiplebtns" id="multiplebtns">
+                <a href="#" id="changeColorLink" class="changeColorLink">Discover</a>
+                <a href="#" id="changeColorLink2" class="changeColorLink">Animation</a>
+                <a href="#" id="changeColorLink3" class="changeColorLink">Branding</a>
+                <a href="#" id="changeColorLink4" class="changeColorLink">Illustration</a>
+                <a href="#" id="changeColorLink5" class="changeColorLink">Mobile</a>
+                <a href="#" id="changeColorLink6" class="changeColorLink">Print</a>
+                <a href="#" id="changeColorLink7" class="changeColorLink">Product Design</a>
+                <a href="#" id="changeColorLink8" class="changeColorLink">TypoGraphy</a>
+                <a href="#" id="changeColorLink9" class="changeColorLink">Web Design</a>
+            </div>
+
+
+
+
+            <div class="myfilterbtn">
+                <button class="myfilterbtn"><img src="filter.png" alt="" class="filterimg">Filters</button>
+            </div>
+
+        </div>
+
+
+
+        <!-- tab btns for mobile and tab -->
+        <div class="tabbtn">
+            <div class="tabpopularbtn">
+                <button class="tabpopbtn">Popular<img src="down-arrow.png" alt="" class="popimg"></button>
+            </div>
+
+
+            <div class="tabfilterbtn">
+                <button class="tabmyfilterbtn"><img src="filter.png" alt="" class="filterimg">Filters</button>
+            </div>
+        </div>
+
+
+
+        <div class="middletablinks">
+            <a href="">Discover</a>
+            <a href="">Animation</a>
+            <a href="">Branding</a>
+            <a href="">Illustration</a>
+            <a href="">Mobile</a>
+            <a href="">Print</a>
+            <a href="">Product Design</a>
+            <a href="">TypoGraphy</a>
+            <a href="">Web Design</a>
+        </div>
+
+
+
+
+
+        <div class="maincardscontainer">
+            <div class="hovercard">
+                <div class="cardhovername">
+                    <p>Product</p>
+                </div>
+
+                <div class="hovericons">
+                    <div class="saveicon">
+                        <img src="" alt="">
+                    </div>
+                    <div class="favicon">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- bottomsection -->
+
+
+
+        <div class="signupandarrow">
+
+
+            <div class="signupbtn">
+                <!-- signup to continue -->
+                <button>Sign up to continue</button>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- slider -->
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Images inside the slides container -->
+                <div class="slideimgdesc">
+                    <img src="original-084b51bbf4d5784a288919eadd393426.webp" alt="Image 1">
+                    <a href="">Mobile</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-1a9bb9cc585992a5c5f5afff1c90836a.webp" alt="Image 2">
+                    <a href="">Animation</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-50196209e0614b653849b0d54905fa46.webp" alt="Image 3">
+                    <a href="">Product Design</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-5b10e3625a54f659d4a0e7fe4e6083ec.webp" alt="Image 4">
+                    <a href="">Web Design</a>
+                </div>
+
+                <div class="slideimgdesc">
+                    <img src="original-084b51bbf4d5784a288919eadd393426.webp" alt="Image 1">
+                    <a href="">Mobile</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-1a9bb9cc585992a5c5f5afff1c90836a.webp" alt="Image 2">
+                    <a href="">Animation</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-50196209e0614b653849b0d54905fa46.webp" alt="Image 3">
+                    <a href="">Product Design</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-5b10e3625a54f659d4a0e7fe4e6083ec.webp" alt="Image 4">
+                    <a href="">Web Design</a>
+                </div>
+
+                <div class="slideimgdesc">
+                    <img src="original-084b51bbf4d5784a288919eadd393426.webp" alt="Image 1">
+                    <a href="">Mobile</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-1a9bb9cc585992a5c5f5afff1c90836a.webp" alt="Image 2">
+                    <a href="">Animation</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-50196209e0614b653849b0d54905fa46.webp" alt="Image 3">
+                    <a href="">Product Design</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-5b10e3625a54f659d4a0e7fe4e6083ec.webp" alt="Image 4">
+                    <a href="">Web Design</a>
+                </div>
+
+                <div class="slideimgdesc">
+                    <img src="original-084b51bbf4d5784a288919eadd393426.webp" alt="Image 1">
+                    <a href="">Mobile</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-1a9bb9cc585992a5c5f5afff1c90836a.webp" alt="Image 2">
+                    <a href="">Animation</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-50196209e0614b653849b0d54905fa46.webp" alt="Image 3">
+                    <a href="">Product Design</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-5b10e3625a54f659d4a0e7fe4e6083ec.webp" alt="Image 4">
+                    <a href="">Web Design</a>
+                </div>
+
+                <div class="slideimgdesc">
+                    <img src="original-084b51bbf4d5784a288919eadd393426.webp" alt="Image 1">
+                    <a href="">Mobile</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-1a9bb9cc585992a5c5f5afff1c90836a.webp" alt="Image 2">
+                    <a href="">Animation</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-50196209e0614b653849b0d54905fa46.webp" alt="Image 3">
+                    <a href="">Product Design</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-5b10e3625a54f659d4a0e7fe4e6083ec.webp" alt="Image 4">
+                    <a href="">Web Design</a>
+                </div>
+
+                <div class="slideimgdesc">
+                    <img src="original-084b51bbf4d5784a288919eadd393426.webp" alt="Image 1">
+                    <a href="">Mobile</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-1a9bb9cc585992a5c5f5afff1c90836a.webp" alt="Image 2">
+                    <a href="">Animation</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-50196209e0614b653849b0d54905fa46.webp" alt="Image 3">
+                    <a href="">Product Design</a>
+                </div>
+                <div class="slideimgdesc">
+                    <img src="original-5b10e3625a54f659d4a0e7fe4e6083ec.webp" alt="Image 4">
+                    <a href="">Web Design</a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="bottomnavmain">
+
+            <div class="bottomnav">
+                <div class="leftbottomnavlogo">
+                    <a href="#"><img src="dribblelogo.png" alt="logo"></a>
+                </div>
+                <div class="bottomnavlists">
+                    <div class="list">
+                        <a href="" class="lis">For Designers</a>
+                    </div>
+                    <div class="list">
+                        <a href="" class="lis">Hire Talent</a>
+                    </div>
+                    <div class="list">
+                        <a href="" class="lis">Inspiration</a>
+                    </div>
+                    <div class="list">
+                        <a href="" class="lis">Advertising</a>
+                    </div>
+                    <div class="list">
+                        <a href="" class="lis">Blog</a>
+                    </div>
+                    <div class="list">
+                        <a href="" class="lis">About</a>
+                    </div>
+
+                </div>
+
+                <div class="socialicons">
+                    <div class="twittericon">
+                        <img src="twitter.png" alt="">
+                    </div>
+                    <div class="fbicon">
+                        <img src="fb.webp" alt="">
+                    </div>
+
+                    <div class="instaicon">
+                        <img src="instagram-logo-instagram-icon-transparent-free-png.webp" alt="">
+                    </div>
+
+                    <div class="pinteresticon">
+                        <img src="pinterest.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="footer">
+                <div class="footerleft">
+                    <div class="copy">
+                        © 2024 Dribbble
+                    </div>
+                    <div class="terms">
+                        <a href="">Terms</a>
+                    </div>
+
+                    <div class="privacy">
+                        <a href="">Privacy</a>
+                    </div>
+
+                    <div class="cookies">
+                        <a href="">Cookies</a>
+                    </div>
+                </div>
+
+                <div class="footerright">
+                    <div class="jobs">
+                        <a href="">Jobs</a>
+                    </div>
+
+                    <div class="designers">
+                        <a href="">Designers</a>
+                    </div>
+
+                    <div class="freelancers">
+                        <a href="">Freelancers</a>
+                    </div>
+
+                    <div class="tags">
+                        <a href="">Tags</a>
+                    </div>
+
+                    <div class="places">
+                        <a href="">Places</a>
+                    </div>
+
+                    <div class="resources">
+                        <a href="">Resources</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+/* Mobile Menu Styles */
+.mobile-nav {
+    display: none;
+    /* Hidden by default on desktop */
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-menu img {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 85%;
+    height: 100vh;
+    background: white;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.menu-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-menu {
+    cursor: pointer;
+}
+
+.close-menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-nav-content {
+    padding: 20px 0;
+}
+
+.mobile-nav-item {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item-header.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    display: none;
+    padding: 15px 20px;
+    background: #f8f8f8;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.featured-items {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.featured-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+}
+
+.featured-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.submenu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submenu-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.submenu-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-item-link {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 615px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    /* Hide desktop navigation if present */
+    .desktop-nav {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 616px) and (max-width: 780px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    /* Hide desktop navigation if present */
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger-menu img {
+        width: 50px;
+        height: 40px;
+        margin-right: 20px;
+    }
+}

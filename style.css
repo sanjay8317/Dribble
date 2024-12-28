@@ -1,0 +1,1742 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hind Siliguri", serif;
+}
+
+
+.maincontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+
+
+nav {
+    position: relative;
+    font-family: "Hind Siliguri", serif;
+}
+
+
+.navlist1,
+.navlist2 {
+    position: relative;
+    display: inline-block;
+}
+
+.explore-container,
+.designer-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.exploreimage img,
+.designerimg img {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    min-width: 250px;
+    z-index: 5000;
+}
+
+.explore-container:hover .dropdown-menu,
+.designer-container:hover .dropdown-menu {
+    display: block;
+}
+
+.drophead {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+}
+
+.popular,
+.Newnot {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 12px;
+    transition: background-color 0.2s;
+}
+
+.popimg img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.Newnotimg img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.populartext a,
+.Newnottext a {
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.dropdown-links a {
+    display: block;
+    padding: 12px 15px;
+    transition: background-color 0.2s;
+    font-weight: 400;
+}
+
+
+
+.browse,
+.submit,
+.post,
+.hiring {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+
+}
+
+.browsedropimg img,
+.subitdropimg img,
+.postdropimg img,
+.hiringdropimg img {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+.browsedrop,
+.subitdrop,
+.postdrop,
+.hiringdrop {
+    flex-grow: 1;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    /* margin-top: 10px; */
+    justify-content: center;
+
+    gap: 5%;
+
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.headerbrandicon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+}
+
+
+.brand img {
+    height: 40px;
+}
+
+.searchbar {
+    /* width: 100%; */
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-right: 5%; */
+}
+
+
+
+
+.searchbar input {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 120px 20px 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f3f3f6;
+    outline: none;
+
+}
+
+
+
+
+.shotsearch {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.shots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 10px; */
+    gap: 5px;
+    font-weight: 500;
+
+}
+
+
+.shotimg img {
+    padding-top: 5px;
+    width: 10px;
+    height: 20px;
+    object-fit: cover;
+    /* margin-right: 50px;  */
+}
+
+.searchicon img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    /* height: 30px; */
+}
+
+
+
+/* .insidesearch {
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300%;
+    height: 50px;
+  
+} */
+
+.navlist {
+    /* border: 1px solid black; */
+    /* width: 150%; */
+    display: flex;
+    /* margin-left: 5%; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-right: 5%;
+    font-weight: 600;
+
+}
+
+
+.navlist a {
+    text-decoration: none;
+    color: black;
+}
+
+.navlist a:hover {
+
+    color: gray;
+}
+
+.navlist1 {
+    display: flex;
+    gap: 5px;
+}
+
+.navlist2 {
+    display: flex;
+    gap: 5px;
+}
+
+.navlist1 img {
+    /* padding-top: 10px;
+    width: 30px;
+    height: 30px; */
+    /* object-fit: cover; */
+}
+
+.navlist2 img {
+    /* padding-top: 10px;
+    width: 30px;
+    height: 30px; */
+    /* object-fit: cover; */
+}
+
+
+
+
+.navbuttons {
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup {
+    width: 25%;
+    border-radius: 10px;
+    padding: 10px;
+    height: 30px;
+}
+
+.signup a:hover {
+    color: gray;
+}
+
+
+.signup a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.login button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    background-color: black;
+    color: white;
+    border: none;
+    width: 120%;
+    border-radius: 20px;
+    padding: 20px;
+    height: 20px;
+    font-weight: 500;
+}
+
+.signuplogin {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-weight: 500;
+    /* gap: 10%; */
+}
+
+.titledashboard h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.aboutdashboard {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.descofdashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 100px;
+    width: 100%;
+    color: gray;
+    font-weight: 300;
+    font-size: 18px;
+    /* border: 1px solid black; */
+}
+
+.related {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.relate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    margin-right: 10px;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.chart:hover {
+    cursor: pointer;
+}
+
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.admin:hover {
+    cursor: pointer;
+}
+
+.graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.graph:hover {
+    cursor: pointer;
+}
+
+.analytics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.analytics:hover {
+    cursor: pointer;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.data:hover {
+    cursor: pointer;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.stats:hover {
+    cursor: pointer;
+}
+
+
+.cardbtnsmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    width: auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+
+
+.multiplebtns a {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.multiplebtns a:hover {
+    /* background-color: #f8f7f4; */
+    border: none;
+    border-radius: 10px;
+    color: gray;
+
+}
+
+/* .popularbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+} */
+
+
+/* .filterbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+} */
+
+.filterimg {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.myfilterbtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 130%;
+    height: 50%;
+    color: black;
+    border: 1px solid rgb(202, 198, 198);
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.myfilterbtn button:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+}
+
+.popimg {
+    padding-left: 5px;
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+
+    margin-left: 10px;
+}
+
+
+.popbtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 120%;
+    height: 50%;
+    color: black;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-family: "Hind Siliguri", serif;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(223, 223, 223);
+}
+
+.popbtn:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+}
+
+
+
+
+.maincardscontainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5%;
+    width: auto;
+}
+
+
+.cardimg {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+}
+
+.cardimg:hover img {
+    transform: scale(1.1);
+
+}
+
+.hovercard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0), rgb(58, 58, 58));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Hind Siliguri", serif;
+    font-weight: 400;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cardimg:hover .hovercard {
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+}
+
+.cardhovername p a {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hovericons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.saveicon,
+.favicon {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.saveicon img,
+.favicon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    max-width: 325px;
+    /* Max width for the card */
+    /* margin: 0 10px 20px 10px;   */
+}
+
+
+
+
+.card1 img:hover {
+    cursor: pointer;
+}
+
+.cardimg img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    /* object-fit: cover; */
+}
+
+.cardbottom {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    gap: 20px;
+    margin-top: 10px;
+}
+
+
+.cardbottomleft {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+
+.cardtitle a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.cardlogo img {
+    width: 25px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+.teambtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #d3d3d7;
+    color: white;
+    height: 20px;
+    padding: 5px;
+    font-size: 10px;
+    /* font-weight: 300; */
+
+}
+
+.teambtn:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+
+.cardbottomright {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
+.like {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likeicon img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    margin-right: 5px;
+    margin-top: 5px;
+
+}
+
+.likeicon img:hover {
+    filter: invert(33%) sepia(100%) saturate(6230%) hue-rotate(331deg) brightness(101%) contrast(101%);
+}
+
+.likecount {
+    color: gray;
+}
+
+.watchcount {
+    color: gray;
+}
+
+.watchicon img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 5px;
+    margin-top: 2px;
+
+}
+
+.watch {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.signupandarrow {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.signupbtn button {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+
+}
+
+
+.arrowtop img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+
+.bottomnavmain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+
+}
+
+
+.bottomnav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.bottomnavlists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Ensure no wrapping */
+    overflow: hidden; /* Allow horizontal scroll if necessary */
+    padding: 0 10px; /* Add padding to prevent elements from touching edges */
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+.socialicons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.twittericon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.fbicon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+.instaicon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.pinteresticon img {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.footerleft {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: gray;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.footerleft a {
+    text-decoration: none;
+    color: gray;
+    margin-right: 20px;
+}
+
+.footerright {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.footerright a {
+    text-decoration: none;
+    color: gray;
+    margin-right: 20px;
+}
+
+
+.slider {
+    margin-top: 5%;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: white;
+}
+
+
+.slideimgdesc {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.slideimgdesc:hover {
+    cursor: pointer;
+}
+
+.slideimgdesc a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.slides {
+    display: flex;
+    gap: 25px;
+    padding-left: 20px;
+    animation: slide 40s linear infinite;
+}
+
+.slides img {
+    width: 200px;
+    height: 150px;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.slider:hover .slides {
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 615px) {
+
+    .maincontainer {
+        width: 100%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    /* Navbar Styles */
+    .mobilerespnavheader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .respsearchbar {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 28%;
+        padding: 5px;
+        background-color: whitesmoke;
+        border-radius: 25px;
+        border: 1px solid pink;
+    }
+
+    .respsearchbar input {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 25px;
+        background-color: #f3f3f6;
+        font-size: 1rem;
+        outline: none;
+    }
+
+
+
+
+    .shotsearch {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        margin-left: 30px;
+    }
+
+    .shots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .shotimg img {
+        width: 15px;
+        height: 15px;
+        object-fit: cover;
+    }
+
+    .searchicon img {
+        width: 35px;
+        height: 35px;
+        border: none;
+        border-radius: 50%;
+    }
+
+    /* Login Button */
+    .loginbtn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        border: none;
+        width: 120%;
+        border-radius: 20px;
+        padding: 20px;
+        height: 20px;
+        font-weight: 500;
+    }
+
+    /* Mobile Menu Icon */
+    .respmenuicon img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    /* Menu Container */
+    .respmenuleft {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        align-items: center;
+        width: 10px;
+    }
+
+    .respmenuicon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .respheaderbrandicon {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+    }
+
+    .respheaderbrandicon img {
+        height: 50px;
+        width: 100px;
+    }
+
+    .respmenuright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust login button container */
+    .loginbtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+
+
+    .related {
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .descofdashboard {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .middletablinks {
+        /* display: flex;
+    flex-wrap: wrap;
+    gap: 10px; */
+        display: none;
+    }
+
+    /* .middletablinks a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+} */
+
+    .multiplebtns {
+        display: none;
+    }
+
+    .cardbtnsmain {
+        display: none;
+    }
+
+    .tabbtn {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .popimg img {
+        padding-left: 20px;
+    }
+
+
+    .tabpopularbtn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 130%;
+        height: 50%;
+        color: black;
+        border: 1px solid gray;
+        padding: 20px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid rgb(223, 223, 223);
+    }
+
+    .tabfilterbtn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 50%;
+        color: black;
+        border: 1px solid rgb(202, 198, 198);
+        padding: 20px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+
+    .card1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        /* gap: 10px; */
+        /* flex-wrap: wrap; */
+        padding: 10px;
+        /* width: 20%; */
+    }
+
+    .cardimg {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .footerleft {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color: gray;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .footerright {
+        display: flex;
+        gap: 0;
+        justify-content: center;
+
+    }
+
+    .mobile-nav-list {
+        display: none;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 5px; 
+        font-weight: 500;
+        font-size: 15px; 
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 616px) and (max-width: 780px) {
+
+
+    .maincardscontainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+
+
+    .respsearchbar {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 1px solid pink;
+        padding: 5px;
+        background-color: whitesmoke;
+        border-radius: 25px;
+    }
+
+    .respsearchbar input {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 25px;
+        background-color: #f3f3f6;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    /* .respsearchbar input:hover {
+    border: 1px solid rgb(245, 202, 209);
+} */
+
+
+    .shotsearch {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        margin-left: 30px;
+    }
+
+    .shots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .shotimg img {
+        width: 15px;
+        height: 15px;
+        object-fit: cover;
+    }
+
+    .searchicon img {
+        width: 35px;
+        height: 35px;
+        border: none;
+        border-radius: 50%;
+    }
+
+    /* Login Button */
+    .loginbtn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        border: none;
+        width: 120%;
+        border-radius: 20px;
+        padding: 20px;
+        height: 20px;
+        font-weight: 500;
+    }
+
+    .respmenuicon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 25px;
+    }
+
+    .respmenuicon img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+
+    .mobilerespnavheader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+
+    }
+
+
+    .respmenuleft {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+
+    .respheaderbrandicon {
+        border: 1px solid black;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 50px;
+    }
+
+    .respmenuright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .loginbtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .cardbtnsmain {
+        display: none;
+    }
+
+    .tabbtn {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .tabpopularbtn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 130%;
+        height: 50%;
+        color: black;
+        border: 1px solid gray;
+        padding: 20px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid rgb(223, 223, 223);
+    }
+
+    .tabfilterbtn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 50%;
+        color: black;
+        border: 1px solid rgb(202, 198, 198);
+        padding: 20px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    /* .middletablinks{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .middletablinks a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    } */
+
+
+    .bottomnavlists {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .socialicons {
+        margin-top: 20px;
+        ;
+    }
+
+    .mobile-nav-list {
+        display: none;
+    }
+
+    .middletablinks {
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 781px) and (max-width: 1200px) {
+
+    .maincardscontainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .respsearchbar {
+        display: none;
+    }
+
+    .mobilerespnavheader {
+        display: none;
+    }
+
+
+    .cardbtnsmain {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+
+
+    .searchbar input {
+        width: 150%;
+        margin-right: 20%;
+
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .signup,
+    .login {
+        width: 100%;
+    }
+
+    .middletablinks {
+        display: none;
+    }
+
+    .tabbtn {
+        display: none;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .aboutdashboard {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-nav-list {
+        display: none;
+    }
+
+    .multiplebtns {
+        display: none;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 1201px) {
+    .mobilerespnavheader {
+        display: none;
+    }
+
+    .respsearchbar {
+        display: none;
+    }
+
+    .signup,
+    .login {
+        width: 100%;
+    }
+
+    .searchbar input {
+        width: 150%;
+        margin-right: 20%;
+
+    }
+
+    .navbuttons {
+        margin-right: 20px;
+    }
+
+    .middletablinks {
+        display: none;
+    }
+
+    .tabbtn {
+        display: none;
+    }
+
+    .descofdashboard p {
+        width: 50%;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    /* .cardbtnsmain{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 30px;
+    } */
+
+    .shotsearch {
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+        margin-left: 21px;
+    }
+
+
+    .mobile-nav-list {
+        display: none;
+    }
+
+
+}

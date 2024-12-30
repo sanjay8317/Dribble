@@ -24,7 +24,8 @@ fetch('./cards.json')
         return `
           <div class="card1">
             <div class="cardimg">
-              <img src="${item.cardImage}" alt="">
+            <a href="view.html?id=${item.id}">
+              <img src="${item.cardImage}" alt="" onclick="saveCardData(${item.id})"></a>
               <div class="hovercard">
                 <div class="cardhovername">
                   <p><a href="view.html?id=${item.id}" onclick="saveCardData(${item.id})">${item.cardTitle}</a></p>

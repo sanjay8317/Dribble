@@ -1,7 +1,7 @@
-/* Mobile Menu Styles */
+
 .mobile-nav {
     display: none;
-    /* Hidden by default on desktop */
+   
 }
 
 .hamburger-menu {
@@ -136,13 +136,13 @@
     color: #333;
 }
 
-/* Mobile-specific styles */
+
 @media screen and (max-width: 615px) {
     .mobile-nav {
         display: block;
     }
 
-    /* Hide desktop navigation if present */
+  
     .desktop-nav {
         display: none;
     }
@@ -154,7 +154,6 @@
         display: block;
     }
 
-    /* Hide desktop navigation if present */
     .desktop-nav {
         display: none;
     }

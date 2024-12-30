@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     updateElement('card-image2', card.cardImage, 'src');
     updateElement('card-name-icon', card.cardLogo, 'src');
     updateElement('company-name', card.cardTitle);
-    updateElement('email', 'design@shakuro.com');
+
     updateElement('bottom-company', card.cardTitle);
-    updateElement('bottom-email', 'design@shakuro.com');
+
     updateElement('company-website', `${card.cardTitle.toLowerCase()}.com`);
   } else {
     // Display error message if card not found

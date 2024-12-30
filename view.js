@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (card) {
     document.title = card.title; // Update page title
 
-    // Helper to safely update elements
+    //  update elements
     const updateElement = (id, value, property = 'innerText') => {
       const element = document.getElementById(id);
       if (element) element[property] = value;

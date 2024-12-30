@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const storedCard = localStorage.getItem('currentCard');
   let card = storedCard ? JSON.parse(storedCard) : null;
 
-  // Validate the stored card or find it in the array
+  // Validating the stored card and finding it in the array
   if (!card || card.id !== cardId) {
     card = cardsArray.find(c => c.id === cardId);
   }
